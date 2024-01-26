@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,14 +36,51 @@
 </script>
 </head>
 <body class="font-manrope">
-  <header>
+  <header class="lg:container lg:mx-auto">
+    <nav class="mx-auto">
+      <div class="navbar bg-base-100">
+          <div class="flex-1">
+              <div class="dropdown">
+                  <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                           stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                       </svg>
+                   </label>
+                   <ul tabindex="0"
+                       class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                       <li><a>Pages</a></li>
+                       <li><a>Blog</a></li>
+                       <li><a>Contact</a></li>
+                   </ul>
+              </div>
+               <h1 class="text-[#131318] font-extrabold normal-case text-xl lg:text-4xl">Hockey<span class="text-[#FF4200]">'</span>s</h1>
+           </div>
+           <div class="navbar justify-center hidden lg:flex">
+               <ul class="menu text-base menu-horizontal px-1">
+                   <li><a class="text-base text-[#FF4200] font-bold">Home</a></li>
+                   <li><a>About</a></li>
+                   <li><a>Pages</a></li>
+                   <li><a>Blog</a></li>
+                   <li><a>Contact</a></li>
+               </ul>
+           </div>
+           <div class="flex gap-6">
+               <i class="fa-solid fa-magnifying-glass lg:sr-only sm:sr-only-not "></i>
+               <button class="btn btn-primary text-white text-xl font-semibold">Get Ticket</button>
+           </div>
+       </div>
+   </nav>
 
   </header>
   <main>
 
   </main>
   <footer>
-    
+
   </footer>
   
 </body>
